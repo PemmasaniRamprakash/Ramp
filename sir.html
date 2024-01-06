@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>CONVERTER</title>
+    <script src="./index.js" defer></script>
+    
+    <style>
+        .navbar{
+            background-color: rgb(243, 238, 231);
+            height: 60px;
+            margin:5px;
+
+        }
+        .im1{
+            width:90px;
+            height:max-content;
+        }
+        .cont{
+            margin-top: 16px;
+        }
+        .c1{
+            height: 300px;
+            background-color: rgba(46, 81, 114, 0.13);
+            margin-top: 56px;
+            margin: 10px;
+            margin-left: 6px;
+        }
+        .sel:focus{
+            background-color: pink;
+        }
+        .hh{
+            background-color: rgb(182, 181, 180);
+            height: 350px;
+        }
+        .clac1{
+            height: 330px;
+            width: 1000px;
+        }
+        /* .clms{
+            margin-left: 10px;
+        } */
+        #t1{
+            text-align: center;
+            padding-top: 15px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border: 1px solid;
+            border-radius: 2px 5px 3px 12px;
+            border-width: 1px;
+            margin-left: 17px;
+            margin-right: 17px;
+            animation: ani1 5s infinite;
+            transition: all 2s;
+            
+        }
+        .b2{
+            margin-left: 460px;
+        }
+        #car{
+            height:560px;
+        }
+        /* @keyframes ani1 {
+            0%{
+                text-shadow: 0 0 5px green,0 15px 9px blueviolet,3px 5px 19px yellowgreen;
+                box-shadow: 0 0 6px grey,0 0px  10px red,0 4px 12px orange;
+            }
+         
+            
+        } */
+        .d1{
+            text-align: center;
+            font-size: 26px;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #val{
+            width:200px;
+            text-align: center;
+            border-radius: 2px 7px 3px;
+            height: 37px;
+            justify-content: center;
+            margin-left: 260px;
+        }
+        .output{
+            font-size: 23px;
+            border:3px solid;
+            border-width: 13px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar has-background-is-lightblue" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <img class="im1" src="logo1.png" alt="logo" width="100px" height="920">
+            </div>
+           <div class="navbar-start">
+            <div class="navbar-item">
+               <a href="https://www.linkedin.com/in/satya-ram-kumar">Follow</a>
+            </div>
+           </div>
+        </div>
+           <div class="navbar-end">
+            <div class="navbar-item is-3 ">
+                Kilometer
+            </div>
+            <div class="navbar-item is-1 has-text-primary">
+                Meters
+            </div>
+           </div>
+        
+    </nav>
+    <div class="card has-background-grey-light cont">
+        <dic class="columns clms">
+            <div class="column is-half mr-6 ml-5">
+                <div class="button b1 is-grey is-left">
+                <span class="icon-text">
+                    <span class="icon">
+                      <img onclick="mt()" src="repeat.svg" alt="">
+                    </span>
+                    <span class="sel">MILES</span>
+                  </span>
+                  
+            </div>
+            <div class="button b2 is-grey is-left">
+                <span class="icon-text">
+                    <span class="icon">
+                      <img onclick="km()" src="rss.svg" alt="">
+                    </span>
+                    <span class="sel">KILOMETERS</span>
+                  </span>
+                  
+            </div>
+            <div class="card c1">
+                <br><br>
+                <h1 id="t1" class="title  mt-4 mb-3">WELCOME</h1>
+                
+                <h2 class="is-4 is-primary d1">Enter Distance</h2>
+                <br>
+                <br>
+              
+                <input type="text" id="val" class="inp1" placeholder="Enter">
+            </div>
+            <div class="card hh">
+                <div class="column">
+              <a href="https://learnerfromonline.github.io/calc/calc.html"><img class="clac1" src="Calculator-bro.svg" alt=""></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="column">
+           
+                <img id="car" src="log2.svg" alt=""><br>
+          <p class="output">Hello</p>
+        </div>
+        
+        </div>
+        <div class="columns">
+            <div class="column">
+            
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+</html>
